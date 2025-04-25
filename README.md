@@ -36,7 +36,7 @@ python-dotenv
 Installation
 
 Clone the repository:
-git clone https://github.com/your-username/deep-research-system.git
+git clone https://github.com/sujnankumar/scraping-and-answer-agent.git
 cd deep-research-system
 
 
@@ -64,7 +64,7 @@ Usage
 Run the main script to test the system:
 python deep_research_system.py
 
-The script includes an example query: "What are the latest advancements in quantum computing?". You can modify the query variable in the script or extend the system to accept user input.
+The script includes an example query: "What are the latest advancements in quantum computing?". Can modify the query variable in the script or extend the system to accept user input.
 Example Output
 Query: What are the latest advancements in quantum computing?
 
@@ -101,34 +101,5 @@ Summarizes research data, cites sources, and ensures clarity.
 Includes retry logic with exponential backoff for API errors.
 Falls back to explaining limitations if no data is available.
 
-
-
-Extensibility
-
-Add more agents (e.g., a fact-checking agent) by extending the LangGraph workflow.
-Integrate additional data sources (e.g., academic papers via arXiv API).
-Customize the prompt for different response styles (e.g., technical vs. layman).
-
-Submission
-The GitHub repository, a short resume, and this README (serving as the implementation explanation) will be emailed to contact@kairon.co.in by 26 April 2025. The repository includes:
-
-Source code (deep_research_system.py)
-Requirements file (requirements.txt)
-Environment configuration (.env.example)
-This README with detailed documentation
-
-Future Improvements
-
-Dynamic Query Refinement: Allow the research agent to refine queries based on initial results.
-Multi-Agent Collaboration: Introduce a coordinator agent to manage multiple research agents for complex queries.
-Caching: Implement caching for frequently searched queries to reduce API costs.
-UI Integration: Develop a web interface for user interaction using Flask or FastAPI.
-
-Notes on Gemini
-
-The gemini-1.5-flash model is used for its free-tier availability and efficiency.
-Free-tier limits apply (e.g., requests per minute, daily quotas). Check Google's Generative AI documentation for details.
-If rate limits are hit, the retry logic in answer_drafter_agent mitigates transient errors.
-
 Author
-[Your Name][Your Contact Info][Your GitHub Profile]
+[Sujnan Kumar][7899069448][[https://github.com/sujnankumar](https://github.com/sujnankumar)]
