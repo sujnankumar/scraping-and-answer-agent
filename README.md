@@ -61,10 +61,18 @@ Create an API key and add it to your .env file.
 
 
 Usage
-Run the main script to test the system:
-python deep_research_system.py
+Two options:
 
-The script includes an example query: "What are the latest advancements in quantum computing?". Can modify the query variable in the script or extend the system to accept user input.
+1) CLI quick test
+	 - Run the main script (contains an example query you can edit inside):
+		 python main.py
+
+2) Streamlit app (interactive UI)
+	 - Install requirements (in your venv):
+		 pip install -r requirements.txt
+	 - Start the app:
+		 streamlit run app.py
+	 - Open the shown local URL, enter your query, and click "Run Research".
 Example Output
 Query: What are the latest advancements in quantum computing?
 
